@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+body {
+    font-family: 'Roboto', 'sans-serif';
+    color: #331800;
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color:#331800
+}
+
+h1,h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+/* navigation bar */
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:white !important;
+  }
+
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+  
+.sticky+.content {
+    padding-top: 48px;
+}
+
+.navbar {
+    background-color: #FFAE42;
+    color: #331800;
+    height: 100px;
+    text-transform: uppercase;
+}
+
+.navbar .flex{
+    justify-content: space-between;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar a{
+    color: #331800;
+    padding: 12px;
+    margin: 0 5px;
+}
+
+.navbar a:hover{
+    /* background-color: #331800; */
+    color: #331800;
+    border-bottom: 2px solid #331800;
+    /* font-size: 1.2rem; */
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+}
+
+
+
+.showcase {
+    height: 800px;
+    background-color: #FFAE42;
+}
+
+.showcase h1{
+    font-size: 8rem;
+    font-weight: 800;
+    text-shadow: 5px 5px #fff;
+    letter-spacing: -1px;
+    margin-left: -2% ;
+}
+
+.showcase h3{
+    font-size: 4rem;
+    font-weight: 800;
+    text-shadow: 5px 5px #fff;
+    letter-spacing: -1px;
+}
+
+
+.showcase h6{
+    font-size:.8rem;
+    /* font-weight: 800; */
+    /* text-shadow: 5px 5px #fff; */
+    line-height: 1px;
+    letter-spacing: 2px;
+}
+
+.showcase .grid {
+    grid-template-columns: 50% 45%;
+}
+
+
+/* featured */
+
+.featured {
+    padding-top: 100px ;
+}
+
+.featured-heading {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.featured-description {
+    font-size: 1.2rem;
+    font-weight: 800;
+    padding-bottom:20px
+}
+
+.featured-tag {
+    padding:5px 5px 5px 5px;
+    background-color: #FFAE42;
+    color: #331800;
+    width: 30%;
+    transform: translateX(110%);
+    /* left:50%; */
+}
+
+.featured .grid h3{
+    font-size: 1.7rem;
+    font-weight: 800;
+    
+}
+.featured .grid p{
+    font-size: 1.2rem;
+    
+}
+
+.top-products {
+    margin-top: 10rem
+}
+
+.top-products .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.top-products .grid > *:first-child {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2
+}
+
+.top-prod-img:hover{
+    opacity: 90%;
+    border-radius: 10%;
+    transition: ease-in-out .5s;
+    
+}
+
+
+
+.text-center {
+    text-align: center;
+}
+
+/* margin */
+
+.m-1{
+    margin: 1rem;
+}
+
+.m-2{
+    margin: 1.5rem 0;
+}
+
+.m-3{
+    margin: 2rem 0;
+}
+
+.m-4{
+    margin: 3rem 0;
+}
+
+.m-5{
+    margin: 4rem 0;
+}
+
+/* padding */
+
+
+.p-1{
+    padding: 1rem;
+}
+
+.p-2{
+    padding: 1.5rem 0;
+}
+
+.p-3{
+    padding: 2rem 0;
+}
+
+.p-4{
+    padding: 3rem 0;
+}
+
+.p-5{
+    padding: 4rem 0;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid-3{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* button styles  */
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor:pointer;
+    background: #FFAE42;
+    color: #331800;
+    border:none;
+    border-radius: 5px;
+}
+.btn:hover {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor:pointer;
+    background: #331800;
+    color: #FFAE42;
+    border:none;
+    border-radius: 5px;
+}
+
+.updates{
+    background-color:#3A3B3C;
+    height: 79vh;
+}
+
+.slideshow-container {
+    position: relative;
+    background: inherit;
+    color:#FFF;
+    /* margin-top:2%; */
+}
+
+/* Slides */
+.mySlides {
+    display: none;
+    /* padding: 80px; */
+    text-align: left;
+}
+
+.slide-title p{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.slide-subtitle p{
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.slide-desc p{
+    font-size: 1.5rem;
+}
+
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: left;
+    padding: 20px;
+    /* margin-left:10% */
+    /* background: #ddd; */
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+    background-color: #331800;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+    /* slideshow end */
+
+
+
+.contact {
+    background-image: url('../images/reservation.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+}
+
+.contact .form-control{
+    margin:50px 5px;;
+}
+
+.contact input[type='text'],
+.contact input[type='email'],
+.contact input[type='date'],
+.contact input[type='time'] {
+    border: 1px solid #331800;
+    border-radius: 5px;
+    /* background-color:inherit; */
+    font-size: 16px;
+    /* padding:3px; */
+    margin-top:2%;
+    width: 100%;;
+    padding:10px;
+
+}
+
+.contact input[type='text'],
+.contact input[type='email'],
+.contact input[type='date'],
+.contact input[type='time'] ::placeholder{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    color:#000;
+}
+
+.contact .grid {
+    grid-template-columns: 50% 45%;
+}
+
+.btn-reservation {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor:pointer;
+    background: #FFAE42;
+    color: #331800;
+    border:none;
+    border-radius: 5px;
+    width: 100%;
+    font-weight: 600;
+    margin-top:3%;
+    text-align:center;
+}
+
+.btn-reservation:hover {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor:pointer;
+    background: #331800;
+    color: #FFAE42;
+    border:none;
+    border-radius: 5px;
+    width: 100%;
+    font-weight: 600;
+    margin-top:3%;
+    text-align:center;
+}
+
+.contact h3{
+    font-size:5rem;
+}
+
+.contact h5{
+    font-size:2rem;
+    margin-top:20%;
+}
+
+
+.footer .grid {
+    grid-template-columns: 40% 55%;
+}
+.footer {
+    background-image: url('../images/sixth-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    margin-bottom:20px;
+
+}
+
+.footer h3{
+    margin-top:20%;
+    color: #fff;
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.footer p {
+    color: #FFF;
+    font-size:1.2rem;
+    align-items: center;
+
+}
+
+.footer .contact-us p{
+    font-size: 1.2rem;
+    text-align: right;
+    /* margin-top:10%; */
+}
+
+.copyright{
+    text-align: bottom;
+}
+
+.social{
+    color: #fff;
+    font-size: 2rem !important;
+}
+
+
+
+/* responsive */
+@media(max-width:768px){
+    .grid,
+    .showcase .grid,
+    .footer .grid,
+    .contact .grid,
+    .updates .grid,
+    .featured .grid,
+    .top-products .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .showcase{
+        height: auto;
+    }
+
+        
+    .footer .contact-us p{
+        font-size: 1.2rem;
+        text-align: left;
+        /* margin-top:10%; */
+    }
+
+    
+    .top-products .grid > *:first-child {
+        grid-column: 1;
+        grid-row: 1 
+    }
+
+    /* body{
+        display:none;
+    } */
+}
+/* responsive */
+@media(max-width:500px){
+    .navbar{
+        height: 100px;
+    }
+
+    .navbar .flex {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        padding:10px;
+        background-color: rgba(0,0,0,0.1) ;
+    }
+    .showcase h6{
+        margin-top:20%;
+    }
+    .navbar a{
+        color: #331800;
+        padding: 12px;
+        font-size:12px;
+        margin: 0 5px;
+    }
+    
+    .footer .contact-us p{
+        font-size: 1.2rem;
+        text-align: left;
+        /* margin-top:10%; */
+    }
+    
+}
